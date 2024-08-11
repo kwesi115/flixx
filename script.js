@@ -439,19 +439,22 @@ function addCommasToNumber(number) {
 function init() {
     switch(global.currentPage) {
         case '/':
-        case '/index.html':
+        case 'index.html':
           displaySlider();
             displayPopularMovies();
             break
-        case '/shows.html':
+        case 'pages/shows.html':
             displayPopularShows();
             break
-        case '/movie-details.html':
+        case 'pages/movie-details.html':
             displayMovieDetails();
-        case '/tv-details.html':
+            break
+        case 'pages/tv-details.html':
             displayShowDetails();
-        case '/search.html':
+            break
+        case 'pages/search.html':
             search();
+            break
     }
     highlightActiveLink();
 }
