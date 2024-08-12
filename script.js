@@ -449,8 +449,10 @@ function init() {
       case '/kwesimichai.github.io/pages/movie-details.html':
           console.log('Hello');
           displayMovieDetails();
+          break;
       case '/kwesimichai.github.io/pages/tv-details.html':
           displayShowDetails();
+          break;
       case '/kwesimichai.github.io/pages/search.html':
           search();
           break;
