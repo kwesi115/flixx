@@ -442,11 +442,12 @@ function init() {
       case '/kwesimichai.github.io/' || '/kwesimichai.github.io/index.html':
         displaySlider();
           displayPopularMovies();
-          break
+          break;
       case '/kwesimichai.github.io/pages/shows.html':
           displayPopularShows();
           break;
       case '/kwesimichai.github.io/pages/movie-details.html':
+          console.log('Hello');
           displayMovieDetails();
       case '/kwesimichai.github.io/pages/tv-details.html':
           displayShowDetails();
