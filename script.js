@@ -28,7 +28,7 @@ async function displayPopularMovies() {
               alt="Movie Title"
             />` :
                 `<img
-              src="images/no-image.jpg"
+              src="../images/no-image.jpg"
               class="card-img-top"
               alt="${movie.title}"
             />`
@@ -60,7 +60,7 @@ async function displayPopularShows() {
               alt="Movie Title"
             />` :
                 `<img
-              src="images/no-image.jpg"
+              src="../images/no-image.jpg"
               class="card-img-top"
               alt="${show.name}"
             />`
@@ -99,7 +99,7 @@ async function displayMovieDetails() {
               alt="Movie Title"
             />` :
                 `<img
-              src="images/no-image.jpg"
+              src="../images/no-image.jpg"
               class="card-img-top"
               alt="${movie.title}"
             />`
@@ -161,7 +161,7 @@ async function displayShowDetails() {
             alt="show Title"
           />` :
               `<img
-            src="images/no-image.jpg"
+            src="../images/no-image.jpg"
             class="card-img-top"
             alt="${show.name}"
           />`
@@ -272,7 +272,7 @@ function displaySearchResults(results) {
           alt="${global.search.type === 'movie' ? result.title : result.name}"
         />` :
             `<img
-          src="images/no-image.jpg"
+          src="../images/no-image.jpg"
           class="card-img-top"
           alt="${global.search.type === 'movie' ? result.title : result.name}"
         />`
