@@ -19,7 +19,7 @@ async function displayPopularMovies() {
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML = `
-          <a href="movie-details.html?id=${movie.id}">
+          <a href="/pages/movie-details.html?id=${movie.id}">
             ${
                 movie.poster_path
                     ? `<img
@@ -51,7 +51,7 @@ async function displayPopularShows() {
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML = `
-          <a href="tv-details.html?id=${show.id}">
+          <a href="/pages/tv-details.html?id=${show.id}">
             ${
                 show.poster_path
                     ? `<img
@@ -439,7 +439,7 @@ function addCommasToNumber(number) {
 function init() {
   switch(global.currentPage) {
       case '/':
-      case '/kwesimichai.github.io/':
+      case '/kwesimichai.github.io/' || '/kwesimichai.github.io/index.html':
         displaySlider();
           displayPopularMovies();
           break
