@@ -19,7 +19,7 @@ async function displayPopularMovies() {
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML = `
-          <a href="/pages/movie-details.html?id=${movie.id}">
+          <a href="pages/movie-details.html?id=${movie.id}">
             ${
                 movie.poster_path
                     ? `<img
@@ -51,7 +51,7 @@ async function displayPopularShows() {
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML = `
-          <a href="/pages/tv-details.html?id=${show.id}">
+          <a href="pages/tv-details.html?id=${show.id}">
             ${
                 show.poster_path
                     ? `<img
@@ -337,7 +337,7 @@ async function displaySlider() {
     const div = document.createElement('div');
     div.classList.add('swiper-slide');
     div.innerHTML = `
-      <a href="movie-details.html?id=${movie.id}">
+      <a href="pages/movie-details.html?id=${movie.id}">
                 <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" />
               </a>
               <h4 class="swiper-rating">
