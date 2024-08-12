@@ -437,26 +437,24 @@ function addCommasToNumber(number) {
 // Init app
 
 function init() {
-    switch(global.currentPage) {
-        case '/':
-        case 'index.html':
-          displaySlider();
-            displayPopularMovies();
-            break
-        case 'pages/shows.html':
-            displayPopularShows();
-            break
-        case 'pages/movie-details.html':
-            displayMovieDetails();
-            break
-        case 'pages/tv-details.html':
-            displayShowDetails();
-            break
-        case 'pages/search.html':
-            search();
-            break
-    }
-    highlightActiveLink();
+  switch(global.currentPage) {
+      case '/':
+      case 'index.html':
+        displaySlider();
+          displayPopularMovies();
+          break
+      case '/pages/shows.html':
+          displayPopularShows();
+          break;
+      case '/pages/movie-details.html':
+          displayMovieDetails();
+      case '/pages/tv-details.html':
+          displayShowDetails();
+      case '/pages/search.html':
+          search();
+          break;
+  }
+  highlightActiveLink();
 }
 
 
