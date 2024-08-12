@@ -439,18 +439,18 @@ function addCommasToNumber(number) {
 function init() {
   switch(global.currentPage) {
       case '/':
-      case '/index.html':
+      case '/kwesimichai.github.io/':
         displaySlider();
           displayPopularMovies();
           break
-      case '/pages/shows.html':
+      case '/kwesimichai.github.io/pages/shows.html':
           displayPopularShows();
           break;
-      case '/pages/movie-details.html':
+      case '/kwesimichai.github.io/pages/movie-details.html':
           displayMovieDetails();
-      case '/pages/tv-details.html':
+      case '/kwesimichai.github.io/pages/tv-details.html':
           displayShowDetails();
-      case '/pages/search.html':
+      case '/kwesimichai.github.io/pages/search.html':
           search();
           break;
   }
