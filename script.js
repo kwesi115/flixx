@@ -439,25 +439,25 @@ function addCommasToNumber(number) {
 function init() {
   switch(global.currentPage) {
       case '/':
-      case '/kwesimichai.github.io/index.html':
+      case '/flixx/index.html':
         displaySlider();
           displayPopularMovies();
           break;
-      case '/kwesimichai.github.io/':
+      case '/flixx/':
         displaySlider();
           displayPopularMovies();
           break;
-      case '/kwesimichai.github.io/pages/shows.html':
+      case '/flixx/pages/shows.html':
           displayPopularShows();
           break;
-      case '/kwesimichai.github.io/pages/movie-details.html':
+      case '/flixx/pages/movie-details.html':
           console.log('Hello');
           displayMovieDetails();
           break;
-      case '/kwesimichai.github.io/pages/tv-details.html':
+      case '/flixx/pages/tv-details.html':
           displayShowDetails();
           break;
-      case '/kwesimichai.github.io/pages/search.html':
+      case '/flixx/pages/search.html':
           search();
           break;
   }
